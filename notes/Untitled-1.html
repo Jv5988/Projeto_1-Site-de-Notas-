@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <title> Gerador de Notas - Nome Provisório</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "Untitled-2.css"/>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <div class="navbar show-menu">
+            <div class="header-inner-content">
+                <h1 class="logo">NOTES<span>.IO</span></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#notas">Notas</a></li>
+                        <li><a href="#notas">Calendário</a></li>
+                        <li><a href="#ava">Avaliação</a></li>
+
+                    </ul>
+                </nav>
+                <div class="nav-icon-container">
+                    <img src="images/menu.png" class="menu-button">
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="header-inner-content">
+                <div class="header-bottom-side">
+                    <div id="home" class="header-bottom-side-left">
+                        <h2>FACILITE SEU DIA A DIA COM O NOTES.IO!</h2>
+                        <p>O Notes.Io é uma pataforma de gerenciamento de anotações e lembretes, projetada para faciltiar
+                            a organização e produtividade dos usuários. Através do site, você pode criar, editar e organizar
+                           anotações de forma intuitiva e eficiente, além de adicionar lembretes no calendário para manter
+                           <a>o seu dia a dia mais organizado.</p>
+                            
+                    </div>
+                    <div class="header-bottom-side-right">
+                        <img src="images/5575354.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="notas" class="divbackground">
+            <div class="whraper">
+                <div class="conteudo">
+                    <div class="topo">
+                        <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
+                        <button id="btnAddTarefa">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul id="listaTarefas">
+                </ul>
+            </div>
+            
+            <div id="janelaEdicao">
+                <button id="janelaEdicaoBtnFechar">
+                    <i class="fa fa-remove"></i>
+                </button>
+                <h3 id="IdTarefaEdicao">Editar</h3>
+                <hr>
+                <form>
+                    <div class="frm_linha">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="inputTarefaNomeEdicao">
+                    </div>
+                    <div class="frm_linha">
+                        <button id="btnAtualizarTarefa">Salvar</button>
+                    </div>
+                    <div id="janelaEdicaoFundo"></div>
+                </form>
+            </div>
+            <div class="wraper-calender">
+                <div class="number-days">
+                    <span class="mes-anterior">30</span>
+                    <span class="mes-anterior">31</span>
+                </div>
+        
+                <div id="search-reminder-section">
+                    <label for="search-day">Procurar Lembrete:</label>
+                    <input type="number" id="search-day" name="search-day" min="1" max="31">
+                    <button id="search-button">Procurar</button>
+                </div>
+        
+            <div class="reminder-form">
+                <form id="reminder-form">
+                    <input type="hidden" id="selected-day" name="selected-day">
+                    <div>
+                        <label for="title">Título:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div>
+                        <label for="description">Descrição:</label>
+                        <input id="description" name="description" required>
+                    </div>
+                    <button type="submit">Adicionar Lembrete</button>
+                </form>
+                    <div id="reminders">
+                        <ul id="reminder-list"></ul>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="usuarios">
+        <div id="ava" class="testimonials">
+            <div class="testimonial">
+                <blockquote>
+                  <p>"O melhor site de gerenciamento de notas que eu já vi, organizo minhas tarefas diárias no Notes.Io."</p>
+                </blockquote>
+                <p>— Carlinhos Maia</p>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                   <p>"Vida de Jogador é caro, né? Este simples site fez eu ser organizado nas minhas tarefas."</p> 
+                </blockquote>
+                <p>— Neymar Jr.</p>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                   <p>"Estou milionário e agora minha agenda está lotada, mas o Notes.Io me ajuda sempre."</p>
+                </blockquote>
+                <p>— Davi do BBB</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="logo">NOTES<span>.IO</span></h1>
+            <p>copyright © 2024 todos os direitos reservados</p>
+        </div> 
+        <div class="downloads">
+            <img src="images/app-store.png" alt="">
+            <img src="images/play-store.png" alt="">
+        </div>
+        <div class="redes-socias">
+            <img src="" alt="">
+        </div>
+    </footer>
+        
+    <div id = "gradiente1">
+        
+        <script src="Untitled-3.js"></script>
+    </body>
+</html>

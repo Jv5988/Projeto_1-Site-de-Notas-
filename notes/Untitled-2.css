@@ -1,0 +1,605 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #151515;
+    overflow-x: hidden;
+
+}
+
+.navbar{
+    padding: 1rem;
+    top: 0;
+    z-index: 99;
+    background-color: #2C184D;
+}
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    color: #a17bde;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo span{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img{
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul li{
+    color: white;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    color: #a17bde;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.menu-button{
+    display: none;
+}
+
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header{
+    position: relative;
+    background-color: #2C184D;
+    margin: 0;
+}
+
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-bottom-side-left>h2{
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.header-bottom-side-left p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-bottom-side-left button{
+    background-color: #2C184D ;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.header-bottom-side-left button:hover{
+    background-color: #a17bde;
+    transition: all 0.3s;
+}
+
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img{
+    width: 115%;
+}
+
+#gradiente1{
+    background-color: #2C184D;
+    background-image: linear-gradient(180deg, #2C184D,#151515);
+    width: 1500px;
+    height: 0;
+    position: relative;
+    left: 0;
+}
+
+
+#listaTarefas:target{
+    scroll-behavior: smooth;
+}
+
+
+.testimonials {
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+.testimonial {
+    background-color: #8265b1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.testimonials p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: 5px 0;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial p:first-child {
+    font-size: medium;
+    color: white;
+    line-height: rem;
+}
+
+.testimonial p:last-child {
+    font-weight: bold;
+}
+
+.usuarios{
+    background-color: #2C184D;
+    display: grid;
+}
+.whraper {
+    max-width: 634px;  
+    margin: 0 auto;    
+    background-color: #292929;  
+    border-radius: 20px; 
+    padding: 55px;  
+    box-sizing: border-box; 
+    color: white;  
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 1rem; 
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+
+
+.topo input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: #191818;
+    color: white;
+}
+
+.topo button{
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    color: white;
+    outline: none;
+}
+
+.topo button:hover{
+    background: #a17bde;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#listaTarefas{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li{
+    padding: 20px;
+    background: #191818;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.btnAcao{
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    background: #2b2a2a;
+    color: white;
+    outline: none;
+}
+
+.btnAcao:hover{
+    background-color: #a17bde;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.textoTarefa{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdicao{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 20px;
+    background-color: #191818;
+    border: 1px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao>h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#janelaEdicao.abrir{
+    display: block !important;
+}
+
+#janelaEdicaoBtnFechar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #2d2c2c;
+    background: #2d2c2c;
+    color: white;
+    outline: none;
+}
+
+#janelaEdicaoBtnFechar:hover{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    background-color: #a17bde;
+}
+
+#janelaEdicaoFundo{
+    position: fixed;
+    top: 0;
+    background-color: #292929;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm_linha{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 29px;
+}
+
+.frm_linha label{
+    margin-bottom: 7px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.frm_linha input{
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: #2d2c2c;
+    color: white;
+}
+
+.frm_linha button{
+    background: #2d2c2c;
+    border: 1px solid;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: #ccc;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.frm_linha button:hover{
+   background-color: #a17bde;
+   transition: 0.3s ease-in-out;
+}
+
+.wraper-calender{
+    max-width: 634px;
+    margin: 10px auto;
+    margin-bottom: 0;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number-days{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+
+.number-days span{
+    display: inline-block;
+    width: 14.2%;
+    color: #ccc;
+    margin: 8px 0 30px;
+}
+
+.number-days span:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    color: #a17bde;
+    transition: all 0.3s ease-in-out;
+}
+
+.mes-anterior{
+    opacity: 0.5;
+}
+
+.reminder-form {
+    margin-bottom: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #292929;
+    display: none;
+}
+
+#title, #description {
+    background-color: #292929; 
+    border: none;
+    outline: none;
+    padding: 5px; 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.marked-day {
+    text-decoration: underline; 
+    color: #a17bde;
+}
+
+#reminder-form>button{
+    background-color: #292929; 
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 10px 15px;
+    margin-left: 200px;
+    font-size: 16px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s ease-in-out; 
+    
+}
+
+#reminder-form>button:hover{
+    background-color: #a17bde;
+}
+
+#reminder-form>label{
+    color: white;
+}
+
+#reminders {
+    display: none;
+}
+
+.reminder-form label{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#search-reminder-section>input{
+    background-color: #292929; 
+    border-radius: 50px;
+    outline: none;
+    padding: 5px; 
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+#search-reminder-section>label{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#search-reminder-section>button{
+    background-color: #292929; 
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 10px 15px;
+    font-size: 16px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s ease-in-out; 
+}
+
+#search-reminder-section>button:hover{
+    background-color: #a17bde;
+}
+    .divbackground{
+        background: #2C184D;
+    }
+
+    .logo-rodape{
+        text-align: center;
+    }
+
+    .logo-rodape>p{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .downloads{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .downloads img {
+        width: 150px; 
+    }
+
+@media (max-width: 800px){
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .header-bottom-side{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+    nav{
+        position: absolute;
+        background-color: #292929;
+        width: 100%;
+        top: 46px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+
+    .header-bottom-side-right img{
+        margin-top: 100px;
+        max-width: 80%;
+    }
+}
+@media (max-width: 600px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px; 
+        padding: 2rem 1rem; 
+    }
+
+    .divbackground {
+        padding: 10px;
+    }
+    #inputNovaTarefa, #inputTarefaNomeEdicao,
+    #btnAddTarefa, #btnAtualizarTarefa {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .testimonials {
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 400px){
+    #reminder-form>button{
+        transform: translateX(-90%)
+    }
+}
+
+
+
